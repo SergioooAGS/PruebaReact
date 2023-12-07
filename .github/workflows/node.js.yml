@@ -32,7 +32,7 @@ jobs:
 
     - name: Deploy with gh-pages
       run: |
-       git remote set-url origin https://github.com/${GITHUB_REPOSITORY}.git
+       git remote set-url origin https://github.com/SergioooAGS/PruebaReact/${PruebaReact}.git
        git config --global user.email "serginchis@gmail.com"
        git config --global user.name "SergioooAGS"
        git config --global credential.helper store
