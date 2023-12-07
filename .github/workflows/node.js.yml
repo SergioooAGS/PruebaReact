@@ -32,13 +32,13 @@ jobs:
 
     - name: Deploy with gh-pages
       run: |
-       git remote set-url origin https://github.com/SergioooAGS/PruebaReact/${PruebaReact}.git
-       git config --global user.email "serginchis@gmail.com"
-       git config --global user.name "SergioooAGS"
-       git config --global credential.helper store
-       git checkout main
-       git pull origin main
-       npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        git remote set-url origin https://github.com/SergioooAGS/PruebaReact.git
+        git config --global user.email "serginchis@gmail.com"
+        git config --global user.name "SergioooAGS"
+        git config --global credential.helper store
+        git checkout main
+        git pull origin main
+        npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   
